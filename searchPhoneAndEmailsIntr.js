@@ -16,7 +16,7 @@ searchPhoneAndEmailsIntr = function () {
     phonesAndEmails.forEach(el=> {
       let elValue =  el.querySelector('.js-linked-pei.text-input').value.replaceAll(" ", "")
       el.querySelector('.tips__inner.custom-scroll ').innerHTML += `
-    <div class="tips-item js-tips-item js-cf-actions-item "  data-id="" data-forced="" data-value="" data-suggestion-type="">
+    <div class="tips-item js-tips-item js-cf-actions-item "  data-id="" onclick="this.querySelector('a').click()" data-forced="" data-value="" data-suggestion-type="">
     <a href="https://yandex.ru/search/?text=${elValue}" target="_blank" onclick="window.open('http://letmegooglethat.com/?q=${elValue}')" ></a>
     <span class="tips-icon-container">
     
